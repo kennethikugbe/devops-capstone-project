@@ -1,7 +1,7 @@
 # devops-capstone-project
 This is a devops Capstone project
 
-![Build Status](https://github.com/kennethikugbe/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
+![Build Status](https://github.com/kennethikugbe/devops-capstone-project/actions/workflows/ci-build.yml/badge.svg)
 
 
 
