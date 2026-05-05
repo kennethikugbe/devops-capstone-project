@@ -1,0 +1,32 @@
+[init : remove] Removing all files from /workspace/source ...
+[init : remove] rm: can't remove '/workspace/source/.git/objects/5d': No such file or directory
+
+[clone : clone] + [ false = true ]
+[clone : clone] + [ false = true ]
+[clone : clone] + [ false = true ]
+[clone : clone] + CHECKOUT_DIR=/workspace/output/
+[clone : clone] + [ true = true ]
+[clone : clone] + cleandir
+[clone : clone] + [ -d /workspace/output/ ]
+[clone : clone] + rm -rf /workspace/output//Dockerfile /workspace/output//LICENSE /workspace/output//Makefile /workspace/output//Procfile /workspace/output//README.md /workspace/output//bin /workspace/output//deploy /workspace/output//postgresql-ephemeral-template.json /workspace/output//requirements.txt /workspace/output//service /workspace/output//setup.cfg /workspace/output//tekton /workspace/output//tests
+[clone : clone] + rm -rf /workspace/output//.devcontainer /workspace/output//.flake8 /workspace/output//.flaskenv /workspace/output//.git /workspace/output//.gitattributes /workspace/output//.github /workspace/output//.gitignore
+[clone : clone] + rm -rf /workspace/output//..?*
+[clone : clone] + test -z 
+[clone : clone] + test -z 
+[clone : clone] + test -z 
+[clone : clone] + git config --global --add safe.directory /workspace/output
+[clone : clone] + /ko-app/git-init -url=https://github.com/kennethikugbe/devops-capstone-project.git -revision=cd-pipeline -refspec= -path=/workspace/output/ -sslVerify=true -submodules=true -depth=1 -sparseCheckoutDirectories=
+[clone : clone] {"level":"error","ts":1778025022.869803,"caller":"git/git.go:53","msg":"Error running git [remote get-url origin]: exit status 2\nerror: No such remote 'origin'\n","stacktrace":"github.com/tektoncd-catalog/git-clone/git-init/git.run\n\tgithub.com/tektoncd-catalog/git-clone/git-init/git/git.go:53\ngithub.com/tektoncd-catalog/git-clone/git-init/git.Fetch\n\tgithub.com/tektoncd-catalog/git-clone/git-init/git/git.go:109\nmain.main\n\tgithub.com/tektoncd-catalog/git-clone/git-init/main.go:52\nruntime.main\n\truntime/proc.go:272"}
+[clone : clone] {"level":"info","ts":1778025036.0198207,"caller":"git/git.go:186","msg":"Successfully cloned https://github.com/kennethikugbe/devops-capstone-project.git @ ecb8e051de31f27c984145417d42c35ace91b710 (grafted, HEAD, origin/cd-pipeline) in path /workspace/output/"}
+[clone : clone] {"level":"info","ts":1778025036.7043967,"caller":"git/git.go:225","msg":"Successfully initialized and updated submodules in path /workspace/output/"}
+[clone : clone] + cd /workspace/output/
+[clone : clone] + git rev-parse HEAD
+[clone : clone] + RESULT_SHA=ecb8e051de31f27c984145417d42c35ace91b710
+[clone : clone] + EXIT_CODE=0
+[clone : clone] + [ 0 != 0 ]
+[clone : clone] + git log -1 --pretty=%ct
+[clone : clone] + RESULT_COMMITTER_DATE=1778024885
+[clone : clone] + printf %s 1778024885
+[clone : clone] + printf %s ecb8e051de31f27c984145417d42c35ace91b710
+[clone : clone] + printf %s https://github.com/kennethikugbe/devops-capstone-project.git
+
