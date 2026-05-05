@@ -167,7 +167,3 @@ def list_accounts():
     accounts = Account.all()
     account_list = [account.serialize() for account in accounts]
     return jsonify(account_list), status.HTTP_200_OK
-<<<<<<< HEAD
-=======
-    
->>>>>>> 240d42654b2189fe51ad80ac181f269b4c4b0093
