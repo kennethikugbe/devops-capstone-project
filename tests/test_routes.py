@@ -186,6 +186,7 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         data = resp.get_json()
         self.assertEqual(data, [])
+      
     def test_list_accounts(self):
         """It should List all Accounts"""
         self._create_accounts(3)
@@ -200,7 +201,11 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         data = resp.get_json()
         self.assertEqual(data, [])
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 240d42654b2189fe51ad80ac181f269b4c4b0093
     def test_security_headers(self):
         """It should return security headers"""
         response = self.client.get('/', environ_overrides=HTTPS_ENVIRON)
@@ -219,3 +224,7 @@ class TestAccountService(TestCase):
         response = self.client.get("/", environ_overrides=HTTPS_ENVIRON)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.headers.get("Access-Control-Allow-Origin"), "*")
+<<<<<<< HEAD
+=======
+      
+>>>>>>> 240d42654b2189fe51ad80ac181f269b4c4b0093
