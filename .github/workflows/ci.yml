@@ -49,6 +49,6 @@ jobs:
           DATABASE_URI: postgresql://postgres:postgres@localhost:5432/testdb
         run: |
           pip install nose coverage
-          coverage run -m nosetests
+          nosetests --with-coverage
           coverage report -m
 
