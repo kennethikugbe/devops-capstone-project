@@ -43,6 +43,13 @@ jobs:
         run: |
           pip install flake8
           flake8 service tests
+          
+      - name: Wait for Postgres
+        run: |
+          until pg_isready -h localhost -p 5432 -U postgres; do
+            echo "Waiting for Postgres..."
+            sleep 5
+          done
 
       - name: Run tests
         env:
